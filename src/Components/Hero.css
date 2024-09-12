@@ -1,0 +1,63 @@
+.hero-section {
+    padding: 20px;
+}
+
+.ticket-group {
+    margin-bottom: 30px;
+}
+
+.ticket-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ticket-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.ticket-header h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.ticket-header small {
+    color: #666;
+}
+
+.ticket-body p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.ticket-footer {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.availability {
+    margin-left: 10px;
+}
+
+.available {
+    color: green;
+}
+
+.not-available {
+    color: red;
+}
