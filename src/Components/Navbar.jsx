@@ -19,31 +19,48 @@ function Navbar({ onGroupChange, onSortChange }) {
                 {isDropdownOpen && (
                     <div className="dropdown-menu">
                         <div className="subdropdown-menu">
-                            <div className="dropdown-group">
+                            <div className="subdropdown-group">
                                 <h3>Grouping</h3>
-                                <button onClick={() => onGroupChange("status")}>
-                                    Status
-                                </button>
-                                <button onClick={() => onGroupChange("user")}>
-                                    User
-                                </button>
-                                <button
-                                    onClick={() => onGroupChange("priority")}
-                                >
-                                    Priority
-                                </button>
+                                <div className="group">
+                                    <button
+                                        onClick={() => onGroupChange("status")}
+                                    >
+                                        Status
+                                        <Logo className="dropdown-icon" />
+                                    </button>
+                                    <button
+                                        onClick={() => onGroupChange("user")}
+                                    >
+                                        User
+                                        <Logo className="dropdown-icon" />
+                                    </button>
+                                    <button
+                                        onClick={() =>
+                                            onGroupChange("priority")
+                                        }
+                                    >
+                                        Priority
+                                        <Logo className="dropdown-icon" />
+                                    </button>
+                                </div>
                             </div>
-                            <div className="dropdown-sort">
+                            {/* <div className="subdropdown-sort">
                                 <h3>Sort By</h3>
-                                <button
-                                    onClick={() => onSortChange("priority")}
-                                >
-                                    Priority
-                                </button>
-                                <button onClick={() => onSortChange("title")}>
-                                    Title
-                                </button>
-                            </div>
+                                <div className="sort">
+                                    <button
+                                        onClick={() => onSortChange("priority")}
+                                    >
+                                        Priority
+                                        <Logo className="dropdown-icon" />
+                                    </button>
+                                    <button
+                                        onClick={() => onSortChange("title")}
+                                    >
+                                        Title
+                                        <Logo className="dropdown-icon" />
+                                    </button>
+                                </div>
+                            </div> */}
                         </div>
                     </div>
                 )}
